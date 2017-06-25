@@ -13,10 +13,10 @@ ya que no he conseguido que funcione el punto 4.
 Una vez tenemos realizado hasta el punto 3, tan solo tenemos que tener en cuenta una cosa, al clonar el repositorio tenemos que hacerlo con el siguiente comando, y de esta manera,
 siempre que trabajemos en ese repositorio podremos hacer pulls y push sin problemas.
 
-A la hora de clonar el repositorio, cambiamos a la opción SSH y nos aparecera algo parecido a esto: git@github.com:sfraguor/testing.git
+A la hora de clonar el repositorio, cambiamos a la opción SSH y nos aparecera algo parecido a esto: **git@github.com:sfraguor/testing.git**
 simplemente tenemos que añadir el nombre que hemos puesto al nuevo SSH que en esta caso es CURSO por lo tanto lo añadiremos de la siguiente manera.
 
-git clone git@github-CURSO:sfraguor/testing.git
+**git clone git@github-CURSO:sfraguor/testing.git**
 
 
 
