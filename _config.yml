@@ -10,13 +10,9 @@ my-blog:
 theme: # leave it empty
 
 # social
-author: "Lore Pirri"
+author: "Sergio Fragua"
 image: /thumbnail-jumbo.png
 twitter:
-  username: lorepirri
+  username: sfraguor
 #  site:
-facebook:
-  publisher: lorepirri
-  profile_id: 1809805629
-  app_id: 1798910940422432
 #  admins:
