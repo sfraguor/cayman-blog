@@ -1,0 +1,53 @@
+
+# Learning the shell
+
+### [Aprende javascript con MentoringJS - Pretraining Step 4](http://mentoringjs.com)
+
+### # vs $
+Es importante conocer la diferencia entre estos dos símbolos que aparecen en nuestra linea de comandos, el primero marca que estamos trabajando como superusuario, en cambio el segundo marca que estamos trabajando como usuario normal. Lo más comun es que siempre veamos el segundo, pero si nos encontramos con el primero, es importante saber que tenemos que ir con más cautela a la hora de realizar las acciones con los archivos porque podríamos eliminar archivos críticos de sistema.
+
+### Como editar archivos mediante linea de comandos
+A la hora de editar archivos directamente a través de la linea de comandos hay diferentes opciones, el editor que suelen haber instalado por defecto es vi, otro editor es less y el que para mi resulta más cómodo es nano, es posible que nuestro terminal no lo tenga por defecto en cuyo caso sería interesante instalarlo. 
+
+nano test.txt
+
+### [Comandos más utilizados](https://www.computerhope.com/unix/urm.htm)
+
+Estos son los comandos que se utilizan con mas frecuencia a la hora de trabajar con archivos en la terminal:
+
+- cp - Copiar (cp [OPTION]... SOURCE... DIRECTORY)
+- mv - Mover (mv [OPTION]... SOURCE... DIRECTORY )
+- rm - Eliminar (rm [OPTION]... FILE...)
+- mkdir - Crear directorio (mkdir [OPTION ...] DIRECTORY ...)
+- grep - buscar y filtrar patrones (grep [OPTIONS] PATTERN [FILE...]) 
+
+### --help
+
+Si tenemos dudas sobre las opciones de cualquier comando lo mejor es lanzar el comando con la opción --help. De este modo nos indicara como se usa y toda las opciones que tiene el comando.
+
+### Sacar por pantalla, comando echo
+
+El comando se utiliza mucho ya que es normal querer interactuar por pantalla a través de los comandos y scripts por lo que echo será muy usado en todo momento tanto en comandos de una linea como en scripts más grandes.
+
+Con el comando echo podremos realizar operaciones que posteriormente lanzaremos por pantalla.
+echo $(($((5**2)) * 3))
+
+### Permisos
+
+Los instrucciones referentes a los permisos son también importantes y es fundamental que tengamos claro su uso.
+
+Quizás el más usado sería CHMOD que se encarga de dar los permisos que queramos a los archivos que queramos en ese momento.
+
+Si por ejemplo queremos dar a un archivos todos los posibles permisos, tanto de lectura como escritura, utilizaremos:
+chmod 777 (archivo)
+Que le dará todos los permisos.
+
+### Practicar
+
+Para poder utilizar algunos de estos comandos de forma más práctica, realicé hace un tiempo este tutorial de (codecademy)[https://www.codecademy.com/learn/learn-the-command-line] que después de haber leído todo los comandos del tutorial teórico de http://linuxcommand.org, nos irá bien para afianzar lo estudiado. 
+
+
+
+
+
+
