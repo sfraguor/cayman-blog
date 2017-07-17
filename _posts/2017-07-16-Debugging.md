@@ -3,7 +3,7 @@
 
 ### [Aprende javascript con MentoringJS - Pretraining Step 5](http://mentoringjs.com)
 
-### console
+### Console
 Una de las instrucciones que más se usa a la hora de debuggar nuestro código es console.log. 
 Esta instrucción se utiliza a la hora de debugar para saber si al ejecutar nuestro código estamos pasando por ciertas partes el mismo o que valor tiene
 una variable en ese momento y de no actuar como esperamos poder solucionar que está pasando.
@@ -23,4 +23,8 @@ que podemos añadir en las partes del código que queremos analizar.
 Para saber bien como funcionan los breakpoints es muy recomendable leer la información de la página developers de google, [breakpoints](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints?hl=es)
 
 
+### Usos no tan habituales
+Además de los conceptos fundamentales de los comandos de Console y los breakpoints, investigando un poco más he encontrado esté post que nos muestra algunos "tips" que nos pueden ser muy útiles a la hora de debuggar.
+
+https://raygun.com/blog/javascript-debugging/
 
