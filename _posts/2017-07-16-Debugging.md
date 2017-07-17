@@ -28,3 +28,11 @@ Además de los conceptos fundamentales de los comandos de Console y los breakpoi
 
 https://raygun.com/blog/javascript-debugging/
 
+
+### Dominar completamente las DevTools
+
+Si queremos saber completamente todas las posibilidades y sacar todo el jugo a estas herramientas, sin duda debemos leernos el manual que tiene google en su web, merece mucho la pena.
+
+https://developers.google.com/web/tools/setup/setup-workflow?hl=es
+
+
