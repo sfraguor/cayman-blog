@@ -20,7 +20,7 @@ Al principio puede parecer confuso pero es necesario conocer bien como funciona 
 Normalmente las herramientas de debug de los navegadores te permiten añadir unas marcas en el lateral izquierdo que hacen la misma función que el comando debugger;
 que podemos añadir en las partes del código que queremos analizar.
 
-Para saber bien como funcionan los breakpoints es muy recomendable leer la información de la página developers de google, [breakpoints] (https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints?hl=es)
+Para saber bien como funcionan los breakpoints es muy recomendable leer la información de la página developers de google, [breakpoints](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints?hl=es)
 
 
 
