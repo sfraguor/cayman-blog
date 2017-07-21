@@ -25,7 +25,7 @@ Para saber bien como funcionan los breakpoints es muy recomendable leer la infor
 ### Usos no tan habituales
 Además de los conceptos fundamentales de los comandos de Console y los breakpoints, investigando un poco más he encontrado esté post que nos muestra algunos "tips" que nos pueden ser muy útiles a la hora de debuggar.
 
-http://raygun.com/blog/javascript-debugging/
+http://raygun.com/blog/javascript-debugging
 
 
 ### Dominar completamente las DevTools
