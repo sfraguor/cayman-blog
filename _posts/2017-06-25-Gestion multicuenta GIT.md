@@ -1,5 +1,4 @@
 # Gestión de multicuentas con GIT
-
 ### [Aprende javascript con MentoringJS - Pretraining Step 4](http://mentoringjs.com)
 
 
