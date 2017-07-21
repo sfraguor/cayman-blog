@@ -1,6 +1,5 @@
 
 # Javascript debugging
-
 ### [Aprende javascript con MentoringJS - Pretraining Step 5](http://mentoringjs.com)
 
 ### Console
