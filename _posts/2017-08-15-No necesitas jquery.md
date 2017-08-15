@@ -1,7 +1,7 @@
 
-*No necesitas jQuery
+* No necesitas jQuery
 
-**GETing - XMLHttpRequest (Petición AJAX)
+** GETing - XMLHttpRequest (Petición AJAX)
 
 var xhr = new XMLHttpRequest();
 xhr.open('GET', 'myservice/username?id=some-unique-id');
