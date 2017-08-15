@@ -3,7 +3,7 @@
 
 ## GETing - XMLHttpRequest (Petición AJAX)
 
-```javascript
+```
 
    var xhr = new XMLHttpRequest();
    xhr.open('GET', 'myservice/username?id=some-unique-id');
