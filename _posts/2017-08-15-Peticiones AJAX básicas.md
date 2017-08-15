@@ -1,7 +1,7 @@
 # Peticiones AJAX Básicas
 ##### Ejemplos de referencia: http://ajaxref.com/ch2/
 
-´´´
+```
 var request;
 if (window.XMLHttpRequest) { // Mozilla, Safari, ...
   request = new XMLHttpRequest();
@@ -16,7 +16,7 @@ if (window.XMLHttpRequest) { // Mozilla, Safari, ...
     catch (e) {}
   }
 }
-´´´
+```
 
 ##### Hacer una petición requiere dos llamadas: 
   
@@ -34,7 +34,7 @@ request.setRequestHeader('request.setRequestHeader('Content-Type', 'application/
 Tenemos dos formas de actuar sobre el resultado de una request:
 
 Controlando el cambio de estado:
-    
+ ```   
   request.onreadystatechange = function() {
     if(request.readyState === 4){ // done
       if(request.status === 200){ //complete
@@ -42,9 +42,9 @@ Controlando el cambio de estado:
       }
     }	
   };
- 
+``` 
 Con addEventListener
-
+```
 function callbackFn(e) {
 	// Manejar cada evento
 }
@@ -53,3 +53,9 @@ request.addEventListener("progress", callbackFn, false);
 request.addEventListener("load", callbackFn, false);
 request.addEventListener("error", callbackFn, false);
 request.addEventListener("abort", callbackFn, false);
+```
+
+Para acabar de aprender todo lo referente a las XMLHttpRequest es interesante estudiar el siguiente enlace:
+
+https://developer.mozilla.org/es/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest
+
