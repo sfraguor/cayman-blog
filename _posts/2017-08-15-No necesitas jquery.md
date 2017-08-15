@@ -3,17 +3,17 @@
 
 ## GETing - XMLHttpRequest (Petición AJAX)
 
-var xhr = new XMLHttpRequest();
-xhr.open('GET', 'myservice/username?id=some-unique-id');
-xhr.onload = function() {
+   var xhr = new XMLHttpRequest();
+   xhr.open('GET', 'myservice/username?id=some-unique-id');
+   xhr.onload = function() {
 	if (xhr.status ===200) {
 	alert('User\ 's name is ' + xhr.responseText);
 	}
 	else {
 		alert(''Request failed. Returned status of' + xhr.status)
 	}
-};
-xhr.send();
+   };
+   xhr.send();
 
 En este ejemplo, creamos un nuevo objeto XMLHttpRequest(), llamamos al metodo GET, pasando la direccion de donde obtener los datos, realizamos las operaciones que queramos y posteriormente realizamos la peticion HTTP al servidor con el metodo send.
 
