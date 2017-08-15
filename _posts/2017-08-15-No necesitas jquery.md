@@ -30,10 +30,45 @@ xhr. open('POST', 'myservice/username?id=some-unique-id');
 xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 xhr.onload = function() {
 	if (xhr.status === 200 && xhr.responseText !== newName){
-		alert();
+		alert('Something went wrong.  Name is now ' + xhr.responseText);
 	}
 	else if (xhr.status !==200){
-		alert ();
+		alert('Request failed.  Returned status of ' + xhr.status);
 	}
 };
+
+xhr.send(encodeURI('name=' + newName));
+
+** URL Encoding (Convertir un objeto a un string codificado)
+
+function param(object) {
+	var encodeString = '';
+		for (var prop in object){
+			if(object.hasOwnProperty(prop)){
+				if (encodedString.length > 0){
+					encodedString += '&';	
+				}
+				encodedString += encodeURI(prop + '=' + object[prop]);
+			}
+		return encodedString;
+}
+
+** Enviando y recibiendo JSON
+
+Actualizando la información (PUT)
+
+var xhr = new XMLHttpRequest();
+xhr.open('PUT', 'myservice/user/1234');
+xhr.setRequestHeader('Content-Type', 'application/json');
+xhr.onload = function() {
+	if (xhr.status === 200){
+		var userInfo = JSON.parse(xhr.reponseText);
+	}
+};
+
+xhr.send(JSON.stringify({
+	name: 'John Smith',
+	age:34
+}));
+
 
