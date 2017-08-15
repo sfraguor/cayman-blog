@@ -19,16 +19,17 @@ if (window.XMLHttpRequest) { // Mozilla, Safari, ...
 ```
 
 ##### Hacer una petición requiere dos llamadas: 
-  
+  ```
   request.open('GET', 'https://davidwalsh.name/ajax-endpoint', true);
   request.send(null);
+  ```
 
 La primera define el tipo de petición y la segunda ejecuta la petición.
 
 ##### Añadir cabeceras:
-
+```
 request.setRequestHeader('request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-
+```
 ##### Peticiones Callback
 
 Tenemos dos formas de actuar sobre el resultado de una request:
@@ -55,7 +56,44 @@ request.addEventListener("error", callbackFn, false);
 request.addEventListener("abort", callbackFn, false);
 ```
 
-Para acabar de aprender todo lo referente a las XMLHttpRequest es interesante estudiar el siguiente enlace:
+Para acabar de aprender todo lo referente a las XMLHttpRequest es interesante estudiar el siguiente enlace donde nos explican porque no usar peticiones sincronas y el uso del objeto FormData.
 
 https://developer.mozilla.org/es/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest
+
+Podemos también ver un ejemplo más completo con addEventListeners
+```
+var req = new XMLHttpRequest();
+
+req.addEventListener("progress", updateProgress, false);
+req.addEventListener("load", transferComplete, false);
+req.addEventListener("error", transferFailed, false);
+req.addEventListener("abort", transferCanceled, false);
+
+req.open();
+
+...
+
+// progress on transfers from the server to the client (downloads)
+function updateProgress(evt) {
+  if (evt.lengthComputable) {
+    var percentComplete = evt.loaded / evt.total;
+    ...
+  } else {
+    // Unable to compute progress information since the total size is unknown
+  }
+}
+
+function transferComplete(evt) {
+  alert("The transfer is complete.");
+}
+
+function transferFailed(evt) {
+  alert("An error occurred while transferring the file.");
+}
+
+function transferCanceled(evt) {
+  alert("The transfer has been canceled by the user.");
+}
+```
+
 
