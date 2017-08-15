@@ -1,7 +1,7 @@
 
-* No necesitas jQuery
+# No necesitas jQuery
 
-** GETing - XMLHttpRequest (Petición AJAX)
+## GETing - XMLHttpRequest (Petición AJAX)
 
 var xhr = new XMLHttpRequest();
 xhr.open('GET', 'myservice/username?id=some-unique-id');
@@ -21,7 +21,7 @@ Si queremos mas informacion sobre este objeto, podemos consultar la siguiente di
 
 http://librosweb.es/libro/ajax/capitulo_7/metodos_y_propiedades_del_objeto_xmlhttprequest.html
 
-** POSTing - XMLHttpRequest (Petición AJAX)
+## POSTing - XMLHttpRequest (Petición AJAX)
 
 var newName = 'John Smith';
 var xhr = new XMLHttpRequest();
@@ -39,7 +39,7 @@ xhr.onload = function() {
 
 xhr.send(encodeURI('name=' + newName));
 
-** URL Encoding (Convertir un objeto a un string codificado)
+## URL Encoding (Convertir un objeto a un string codificado)
 
 function param(object) {
 	var encodeString = '';
@@ -53,7 +53,7 @@ function param(object) {
 		return encodedString;
 }
 
-** Enviando y recibiendo JSON
+## Enviando y recibiendo JSON
 
 Actualizando la información (PUT)
 
