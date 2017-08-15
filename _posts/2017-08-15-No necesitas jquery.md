@@ -1,5 +1,5 @@
 
-No necesitas jQuery
+*No necesitas jQuery
 
 **GETing - XMLHttpRequest (Petición AJAX)
 
