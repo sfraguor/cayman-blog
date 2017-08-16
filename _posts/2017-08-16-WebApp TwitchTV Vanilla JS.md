@@ -5,7 +5,8 @@ https://github.com/rocio-m-sebastian/twitchtv
 
 Antes de empezar con el ejercicio se ha leido y revisado la documentación de la API de la plataforma SWITCHTV.
 https://dev.twitch.tv/docs
-Como vemos, lo primero que hay que darse cuenta es que la plataforma dispone de 2 versiones de API que debemos seleccionar. Después de dar un vistazo vemos que nuestro ejercicio utiliza la v3.
+
+Como vemos, lo primero que hay que darse cuenta es que la plataforma dispone de 2 versiones de API que debemos seleccionar, cada una con sus particularidades. Después de dar un vistazo vemos que nuestro ejercicio utiliza la v3.
 
 Al principio el ejercicio en jQuery no cargaba los canales, una vez revisado, fue necesario cambiar un poco la url de la API a la que vamos a hacer la petición ya que requiere de un client ID que se obtiene registrandose en la plataforma y creando una APP de prueba en la seccion de desarrollo. Una vez hecho esto se nos facilitara el client ID que ahora mostraremos donde se ha introducido.
 
