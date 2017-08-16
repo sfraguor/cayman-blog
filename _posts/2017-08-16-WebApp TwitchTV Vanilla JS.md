@@ -56,3 +56,27 @@ function getChannelInfo() {
 };
 
 ```
+
+Empezamos con las peticiones, primero la peticion GET:
+
+    var xhr2 = new XMLHttpRequest();
+    xhr2.open('GET', makeURL("streams", channel));
+    xhr2.setRequestHeader('Content-Type', 'application/json');
+    xhr2.onload = 
+     function() {
+     }
+     
+Cargamos una cabecera del tipo JSON y una vez recibida la respuesta de la petición, ejecutamos una serie de acciones a traves de la siguiente funcion:
+
+Guardamos en una variable la respuesta que hemos obtenido en formato JSON como string y debemos parsearlo para que sea un objeto Javascript:
+
+    var parsedJSON_2 = JSON.parse(xhr2.responseText);
+     
+Creamos dos variables mas, la variable status y la variable game.
+
+    var status, game;
+
+Comprobamos si la respuesta de la petición contiene el canal o no lo contiene
+
+
+
