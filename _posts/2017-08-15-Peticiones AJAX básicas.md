@@ -1,6 +1,8 @@
 # Peticiones AJAX Básicas
 ##### Ejemplos de referencia: http://ajaxref.com/ch2/
 
+### [Aprende javascript con MentoringJS - Pretraining Step 7](http://mentoringjs.com)
+
 ```
 var request;
 if (window.XMLHttpRequest) { // Mozilla, Safari, ...
