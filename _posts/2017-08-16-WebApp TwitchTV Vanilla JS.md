@@ -134,5 +134,13 @@ status === "online" ? filter.prepend(elChild) : filter.append(elChild);
 
 ```
 
+Y por último nos queda enviar la petición 1 y la peticón 2 pasando como parametro el elemento channel, no sin antes convertirlo a un string mediante la instrucción stringify.
+
+```
+xhr.send(JSON.stringify(channel));
+xhr2.send(JSON.stringify(channel));
+
+```
+
 
 
