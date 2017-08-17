@@ -1,5 +1,6 @@
 
 # No necesitas jQuery
+### [Aprende javascript con MentoringJS - Pretraining Step 7](http://mentoringjs.com)
 
 ## GETing - XMLHttpRequest (Petición AJAX)
 
