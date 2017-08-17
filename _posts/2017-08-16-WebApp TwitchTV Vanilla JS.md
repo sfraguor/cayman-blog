@@ -137,10 +137,61 @@ status === "online" ? filter.prepend(elChild) : filter.append(elChild);
 Y por último nos queda enviar la petición 1 y la peticón 2 pasando como parametro el elemento channel, no sin antes convertirlo a un string mediante la instrucción stringify.
 
 ```
-xhr.send(JSON.stringify(channel));
-xhr2.send(JSON.stringify(channel));
+xhr.send();
+xhr2.send();
 
 ```
+Una vez terminada la función con las 2 peticiones, el paso siguiente es lanzar un eventListener para asegurarnos que antes de lanzar la función todo el DOM ya está cargado, llamamos a la función y luego utilizamos instrucciones de selección de elementos del DOM para controlar los botones que nos permitiran elegir entre visualizar los canales online, offline o ambos.
+
+```
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    getChannelInfo();
+  
+
+  //Cuando pulso los botones del menú
+  let selector = document.querySelectorAll('.selector');
+
+  selector.forEach(function(element){
+   element.addEventListener('click', function(){
+      
+      element.classList.remove('active');
+      element.classList.add('active');
+      let status = element.getAttribute('id');
+
+      if (status === "all"){
+        
+        let allchannels = document.querySelectorAll('.online, .offline');
+        allchannels.forEach(function(allchan){
+          allchan.classList.remove('hidden')
+        });
+      } else if (status === "online") {
+        
+        document.querySelectorAll('.online').forEach(function(onchan){
+          onchan.classList.remove('hidden');
+        });
+        document.querySelectorAll('.offline').forEach(function(onchan){
+          onchan.classList.add('hidden');
+        });
+      } else {
+        //alert("Por descarte estamos accediendo a los offline");
+        document.querySelectorAll('.online').forEach(function(offchan){
+          offchan.classList.add('hidden');
+        });
+        document.querySelectorAll('.offline').forEach(function(offchan){
+          offchan.classList.remove('hidden');
+        });
+      }
+   }); 
+  });
+
+  });
+  
+  ```
+
+
+
 
 
 
