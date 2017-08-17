@@ -73,11 +73,66 @@ Guardamos en una variable la respuesta que hemos obtenido en formato JSON como s
 
     var parsedJSON_2 = JSON.parse(xhr2.responseText);
      
-Creamos dos variables mas, la variable status y la variable game.
+Creamos dos variables mas, la variable status y la variable game que utilizaremos para guardar el nombre del "stream" donde esta el canal y la variable game con el estado del canal.
 
     var status, game;
 
-Comprobamos si la respuesta de la petición contiene el canal o no lo contiene
+Mediante un if comprobamos la propiedad stream que la respuesta ha guardado en la variable parsedJSON_2.
+
+Si el contenido de parsedJSON_2.stream es null la variable game y status la marcamos como offline.
+Si el contenido de parsedJSON_2.stream es undefined la variable game y status la marcamos como Not Found y offline respectivamente.
+Si el contenido de parsedJSON_2.stream no es ninguno de los anteriores significa que hemos encontrado un canal y que está online con lo que guardaremos el nombre del juego del canal en la variable game y el estado como online.
+
+A continuación realizaremos otra petición a la API para obtener la información referente a cada uno de los canales elegidos.
+
+ ```
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', makeURL("channels", channel));
+  xhr.setRequestHeader('Content-Type', 'application/json');
+
+```
+
+Una vez recibida la respuesta lanzamos la siguiente función que se encargará de conseguir el logo, el nombre y la descripción del canal:
+
+```
+  function() {
+        var parsedJSON = JSON.parse(xhr.responseText);
+        var logo = parsedJSON.logo != null ? parsedJSON.logo : "https://dummyimage.com/50x50/ecf0e7/5c5457.jpg&text=0x3F",
+          name = parsedJSON.display_name != null ? parsedJSON.display_name : channel,
+          description = status === "online" ? ': ' + parsedJSON.status : "";
+
+      }
+  
+```
+   
+A continuación se incluye el código html que incrustaremos en la página HTML con todos los canales
+
+```
+  function() {
+        var parsedJSON = JSON.parse(xhr.responseText);
+        var logo = parsedJSON.logo != null ? parsedJSON.logo : "https://dummyimage.com/50x50/ecf0e7/5c5457.jpg&text=0x3F",
+          name = parsedJSON.display_name != null ? parsedJSON.display_name : channel,
+          description = status === "online" ? ': ' + parsedJSON.status : "";
+          
+        html = '<div class="row ' + status + '" id="canal"><div class="col-xs-2 col-md-2" id="icon"><img src="' + 
+           logo + '" class="logo"></div><div class="col-xs-5 col-md-3" id="name"><a href="' + 
+           parsedJSON.url + '" target="_blank">' + name + '</a></div><div class="col-xs-5 col-md-7" id="streaming">' + 
+           game + '<span class="hidden-xs">' + description + '</span></div></div>';
+      }
+  
+```
+
+Con el siguiente código ordenaremos los canales segun su estado, primero los online y posteriormente los offline, colocandolos antes con el metodo prepend y despues con el metodo append.
+
+```
+
+var filter = document.querySelector('#display');
+var elChild = document.createElement('div');
+elChild.innerHTML = html;       
+
+status === "online" ? filter.prepend(elChild) : filter.append(elChild);
+
+```
 
 
 
