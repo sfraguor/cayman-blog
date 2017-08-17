@@ -1,7 +1,8 @@
 # Peticiones AJAX Básicas
+### [Aprende javascript con MentoringJS - Pretraining Step 7](http://mentoringjs.com)
+
 ##### Ejemplos de referencia: http://ajaxref.com/ch2/
 
-### [Aprende javascript con MentoringJS - Pretraining Step 7](http://mentoringjs.com)
 
 ```
 var request;
