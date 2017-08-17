@@ -1,4 +1,6 @@
-## TwitchTV WEBAPP 
+# TwitchTV WEBAPP 
+
+### [Aprende javascript con MentoringJS - Pretraining Step 7](http://mentoringjs.com)
 
 Para realizar este ejercicio se ha partido de un ejercicio en JQuery en el siguiente repositorio GIT.
 https://github.com/rocio-m-sebastian/twitchtv
