@@ -8,7 +8,7 @@ DOM permite acceder y manipular las páginas XHTML como si fueran documentos XML
 
 Las acciones más comunes que debemos conocer y saber hacer cuando trabajamos con el DOM, son las siguientes:
 
-1. Seleccionar elementos HTML
+#### 1. Seleccionar elementos HTML
 
 Para realizar la selección de elementos html, utilizaremos básicamente 2 métodos:
 
@@ -16,7 +16,7 @@ querySelector y querySelectorAll
 
 Con el primero, seleccionaremos un elemento html, si este método se encuentra con dos elementos con la misma característica, este método solo va a devolver el primer elemento.
 
-1.1 document.querySelector(selector)
+##### 1.1 document.querySelector(selector)
 
 Para elegir el tipo de elemento a seleccionar, debemos colocar el tipo de elemento junto con el nombre dentro de los paréntesis y utilizaremos los mismos selectores que en html,
 de forma que si queremos seleccionar un elemento a través de su clase utilizaremos: '.nombreclase', si lo queremos seleccionar mediante su id utilizaremos '.nombreid'.
@@ -27,13 +27,13 @@ document.querySelector('#nombreID'); //Selección a través de su ID
 document.querySelector('.nombreCLASE'); //Selección a través de su CLASE
 document.querySelector(p); //Selección a través del TAG
 
-1.1.1 Selección dentro de selectores
+###### 1.1.1 Selección dentro de selectores
 
 document.querySelector('.container .inner-item');
 
 De esta manera estamos seleccionando el elemento con la clase .inner-item que esta dentro del elemento con clase .container.
 
-1.2 document.querySelectorAll(selectors) - Selección de múltiples elementos
+##### 1.2 document.querySelectorAll(selectors) - Selección de múltiples elementos
 
 document.querySelectorAll('.elemento1, .elemento2');
 
@@ -44,7 +44,7 @@ usar métodos como valueOf(), push(), pop(), o join().
 
 Podemos ver más ejemplos en la siguiente url: https://www.w3schools.com/js/js_htmldom_nodelist.asp
 
-2. Añadir y eliminar listeners(elementos de escucha)
+#### 2. Añadir y eliminar listeners(elementos de escucha)
 
 addEventListener / removeEventListener
 
@@ -113,19 +113,19 @@ function callback(){
 
 Porque debemos eliminar un listener? Porque de esta manera estamos liberando recursos para otras tareas.
 
-3. Añadir o eliminar clases
+#### 3. Añadir o eliminar clases
 
 Añade: element.classList.add('classname');
 Elimina: element.classList.remove('classname');
 Comprueba si existe: element.classList.contains('classname');
 
-4. Añadir, cambiar o eliminar atributos
+#### 4. Añadir, cambiar o eliminar atributos
 
 Obtener atributo: button.getAttribute('aria-expanded');
 Introducir atributo: button.setAttribute('aria-expanded', 'true'); (el segundo parámetro es el valor que daremos al atributo)
 Eliminar atributo: button.removeAttribute('aria-expanded');
 
-5. Añadir o eliminar elementos HTML
+#### 5. Añadir o eliminar elementos HTML
 
 AÑADIR ELEMENTO Y AÑADIR CONTENIDO:
 let li = document.createElement('li'); (Creamos el elemento)
