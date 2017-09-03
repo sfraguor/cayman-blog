@@ -31,6 +31,7 @@ El tiempo esta representado por una progresion vertical. El tiempo se inicia en 
 
 Como ejemplo pasaremos a diagrama de secuencias el ejercicio realizado en el step anterior sobre la plataforma SWITCH, quedando de la siguiente manera:
 
+```
 participant usuario
 participant sistema 
 participant api_switch
@@ -48,6 +49,9 @@ sistema->api_switch: petición de los canales
 api_switch->sistema: respuesta de la petición streams
 api_switch->sistema: respuesta de la petición canales
 sistema->usuario: devuelve la interfaz con los streams y sus canales
+
+```
+
 
 
 
