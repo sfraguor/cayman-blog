@@ -29,6 +29,29 @@ TIEMPO
 
 El tiempo esta representado por una progresion vertical. El tiempo se inicia en la parte superior y avanza hasta la parte inferior, un mensaje que este en la parte superior ocurrir antes que un mensaje que esta en la parte inferior.
 
+Como ejemplo pasaremos a diagrama de secuencias el ejercicio realizado en el step anterior sobre la plataforma SWITCH, quedando de la siguiente manera:
+
+participant usuario
+participant sistema 
+participant api_switch
+
+title Switch App sequence
+
+usuario->sistema: iniciar_sistema()
+sistema-> usuario: devuelve_interfaz()
+sistema->sistema: parametros para la petición de los streams
+sistema->sistema: obtener cabecera de los streams (json)
+sistema->sistema: parametros para la petición de los canales
+sistema->sistema: obtener cabecera de los canales (json)
+sistema->api_switch: petición de los streams
+sistema->api_switch: petición de los canales
+api_switch->sistema: respuesta de la petición streams
+api_switch->sistema: respuesta de la petición canales
+sistema->usuario: devuelve la interfaz con los streams y sus canales
+
+
+
+
 
 
 
