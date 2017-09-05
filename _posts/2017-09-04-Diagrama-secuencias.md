@@ -1,6 +1,6 @@
 
 # Diagrama de secuencias
-
+### [Aprende javascript con MentoringJS - Pretraining Step 8](http://mentoringjs.com)
 #### Que es un diagrama de secuencia?
 
 El Diagrama de Secuencia es un tipo de diagrama usado para modelar interacción entre objetos en un sistema según UML. UML es el Lenguaje Unificado de Modelado, es un lenguaje gráfico para visualizar, especificar, construir y documentar un sistema.
