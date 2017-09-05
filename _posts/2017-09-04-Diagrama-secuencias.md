@@ -52,9 +52,9 @@ sistema->sistema: obtener cabecera de los streams (json)
 sistema->sistema: parametros para la petición de los canales
 sistema->sistema: obtener cabecera de los canales (json)
 sistema->api_switch: petición de los streams
-sistema->api_switch: petición de los canales
-api_switch->sistema: respuesta de la petición streams
+sistema->-api_switch: petición de los canales
 api_switch->sistema: respuesta de la petición canales
+api_switch->sistema: respuesta de la petición streams
 sistema->usuario: devuelve la interfaz con los streams y sus canales
 
 ```
