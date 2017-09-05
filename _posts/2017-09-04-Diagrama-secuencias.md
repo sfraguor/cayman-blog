@@ -15,7 +15,7 @@ Los diagramas de secuencia nos ayudan a planear, visualizar y entender la estruc
 
 El diagrama consta de dos dimensiones, una horizontal de la disposición de los objetos y otra dimensión vertical del paso del tiempo.
 
-· Los objetos estan representados como rectngulos con un texto subrayado y se colocan en la parte superior del diagrama, de izquierda a derecha, la línea punteada que se desprende del rectángulo es conocida como línea de vida del objeto, y junto con esta línea aparece un pequeño rectángulo llamado activación, que represente la ejecución que realiza el objeto. La longitud del rectángulo se interpreta como la duración de la activación.
+· Los objetos estan representados como rectangulos con un texto subrayado y se colocan en la parte superior del diagrama, de izquierda a derecha, la línea punteada que se desprende del rectángulo es conocida como línea de vida del objeto, y junto con esta línea aparece un pequeño rectángulo llamado activación, que representa la ejecución que realiza el objeto. La longitud del rectángulo se interpreta como la duración de la activación.
 
 · Los mensajes se representan con una línea continua que termina con una punta de flecha. Esta pasa de una línea de vida de un objeto a otra. Un objeto puede enviarse un mensaje a si mismo.
   
