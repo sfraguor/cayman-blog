@@ -21,13 +21,14 @@ El diagrama consta de dos dimensiones, una horizontal de la disposición de los 
   
 ##### Hay distintos tipos de mensajes:
 
-- Mensaje Simple: representa la transferencia de un control a otro.
-- Mensaje Sincrono: cuando se envía este mensaje es porque se necesita una respuesta antes de continuar. Los mensajes síncronos se utilizan para representar llamadas de función ordinarias dentro de un programa, asi como otros tipos de mensaje que se comportan de la misma manera.
-- Mensaje Asíncrono: es un mensaje que no requiere una respuesta antes de que el remitente continue. Un mensaje asincrono muestra solu una llamada del remitente. Se utiliza para representar la comunicacion entre subprocesos diferentes o la creación de un nuevo suproceso.
+- **Mensaje Simple**: representa la transferencia de un control a otro.
+- **Mensaje Sincrono**: cuando se envía este mensaje es porque se necesita una respuesta antes de continuar. Los mensajes síncronos se utilizan para representar llamadas de función ordinarias dentro de un programa, asi como otros tipos de mensaje que se comportan de la misma manera.
+- **Mensaje Asíncrono**: es un mensaje que no requiere una respuesta antes de que el remitente continue. Un mensaje asincrono muestra solu una llamada del remitente. Se utiliza para representar la comunicacion entre subprocesos diferentes o la creación de un nuevo suproceso.
 
 ### TIEMPO
 
 El tiempo esta representado por una progresion vertical. El tiempo se inicia en la parte superior y avanza hasta la parte inferior, un mensaje que este en la parte superior ocurrir antes que un mensaje que esta en la parte inferior.
+
 
 Como ejemplo pasaremos a diagrama de secuencias el ejercicio realizado en el step anterior sobre la plataforma SWITCH. Para ello he utilizado la siguiente web https://www.websequencediagrams.com que a través de una serie de intrucciones va generando el diagrama :
 
