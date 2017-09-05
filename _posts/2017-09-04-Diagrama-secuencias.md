@@ -29,6 +29,7 @@ El diagrama consta de dos dimensiones, una horizontal de la disposición de los 
 
 El tiempo esta representado por una progresion vertical. El tiempo se inicia en la parte superior y avanza hasta la parte inferior, un mensaje que este en la parte superior ocurrir antes que un mensaje que esta en la parte inferior.
 
+#### Realizando el diagrama sobre un ejercicio real
 
 Como ejemplo pasaremos a diagrama de secuencias el ejercicio realizado en el step anterior sobre la plataforma SWITCH. Para ello he utilizado la siguiente web https://www.websequencediagrams.com que a través de una serie de intrucciones va generando el diagrama :
 
