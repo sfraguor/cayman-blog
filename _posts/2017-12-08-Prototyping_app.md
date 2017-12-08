@@ -1,19 +1,20 @@
-
-
 # Prototipando una app
 ### [Aprende javascript con MentoringJS - Pretraining Step 9](http://mentoringjs.com)
 #### Que es koreku?
 
 Koreku quiere ser la app que todo coleccionista siempre ha querido tener.
 Koreku se basa en 3 funcionalidas básicas:
-  1. Gestión de colecciones propias 
+ ##### 1. Gestión de colecciones propias 
   El objetivo ademas de la gestion de tus propias colecciones es poder mostrar al resto de usuarios que objetos tienes en tu coleccion para poder marcar si puedes coseguir ese objeto a otro coleccionista o informar que puedes estar dispuesto a venderlo.
-  2. Contacto con otros coleccionistas
+  ##### 2. Contacto con otros coleccionistas
   El objetivo es poder contactar con otros coleccionistas para poder intercambiar objetos, vender objetos ayudarse a encontrar objetos ...
-  3. Ayudantes de coleccionista
+  ##### 3. Ayudantes de coleccionista
   Los ayudantes de coleccionista son personas que no tienen porque ser coleccionistas pero que a cambio de remuneraciones se ofrecen a conseguir objetos que pueden interesar a los coleccionistas. Estos ayudantes tendran valoraciones como sucede en otras plataformas de venta y cada coleccionista podra tener sus ayudantes para conseguir aumentar sus colecciones al mayor precio. Un buen ayudante debería poder ganar bastante dinero, de esta manera mucha gente deberia querer ser ayudante de coleccionista. 
 
 #### Pantalla de login
+
+![minipic](https://github.com/sfraguor/koreku/blob/master/images/login.png?raw=true&s=50)
+
 
 Los diagramas de secuencia nos ayudan a planear, visualizar y entender la estructura de nuestra aplicación en terminos de clases y jerarquías.
 
@@ -34,5 +35,3 @@ El diagrama consta de dos dimensiones, una horizontal de la disposición de los 
 El tiempo esta representado por una progresion vertical. El tiempo se inicia en la parte superior y avanza hasta la parte inferior, un mensaje que este en la parte superior ocurrir antes que un mensaje que esta en la parte inferior.
 
 #### perfil
-
-
