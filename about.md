@@ -1,8 +1,9 @@
 ---
 layout: page
-title: About
-tagline: A few more words about this theme
+title: Sobre mi
+tagline: Información sobre mi
 permalink: /about.html
 ---
 
-Testing
+#### Enlace a mi cuenta de Github
+https://github.com/sfraguor/
