@@ -12,7 +12,7 @@ El objetivo ademas de la gestion de tus propias colecciones es poder mostrar al 
 El objetivo es poder contactar con otros coleccionistas para poder intercambiar objetos, vender objetos ayudarse a encontrar objetos ...
 
 ##### 3. Ayudantes de coleccionista
-Los ayudantes de coleccionista son personas que no tienen porque ser coleccionistas pero que a cambio de remuneraciones se ofrecen a conseguir objetos que pueden interesar a los coleccionistas. Estos ayudantes tendran valoraciones como sucede en otras plataformas de venta y cada coleccionista podra tener sus ayudantes para conseguir aumentar sus colecciones al mayor precio. Un buen ayudante debería poder ganar bastante dinero, de esta manera mucha gente deberia querer ser ayudante de coleccionista. 
+Los ayudantes de coleccionista son personas que no tienen porque ser coleccionistas pero que a cambio de remuneraciones se ofrecen a conseguir objetos que pueden interesar a los coleccionistas. 
 
 #### Pantalla de login
 Una pantalla normal para hacer login en la aplicación, seria interesante añadir la opcion de poderse loguear con tu cuenta de google, facebok ...
