@@ -5,13 +5,13 @@
 Koreku quiere ser la app que todo coleccionista siempre ha querido tener.
 Koreku se basa en 3 funcionalidas básicas:
 
-##### Gestión de colecciones propias 
+##### 1. Gestión de colecciones propias 
 El objetivo ademas de la gestion de tus propias colecciones es poder mostrar al resto de usuarios que objetos tienes en tu coleccion para poder marcar si puedes coseguir ese objeto a otro coleccionista o informar que puedes estar dispuesto a venderlo.
 
-##### Contacto con otros coleccionistas
+##### 2. Contacto con otros coleccionistas
 El objetivo es poder contactar con otros coleccionistas para poder intercambiar objetos, vender objetos ayudarse a encontrar objetos ...
 
-##### Ayudantes de coleccionista
+##### 3. Ayudantes de coleccionista
 Los ayudantes de coleccionista son personas que no tienen porque ser coleccionistas pero que a cambio de remuneraciones se ofrecen a conseguir objetos que pueden interesar a los coleccionistas. Estos ayudantes tendran valoraciones como sucede en otras plataformas de venta y cada coleccionista podra tener sus ayudantes para conseguir aumentar sus colecciones al mayor precio. Un buen ayudante debería poder ganar bastante dinero, de esta manera mucha gente deberia querer ser ayudante de coleccionista. 
 
 #### Pantalla de login
