@@ -6,4 +6,4 @@ permalink: /about.html
 ---
 
 #### Enlace a mi cuenta de Github
-https://github.com/sfraguor/
+[GitHub](https://github.com/sfraguor/)
