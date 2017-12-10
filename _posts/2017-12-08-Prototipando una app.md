@@ -3,6 +3,7 @@
 #### Que es koreku?
 
 Koreku quiere ser la app que todo coleccionista siempre ha querido tener.
+
 Koreku se basa en 3 funcionalidas básicas:
 
 ##### 1. Gestión de colecciones propias 
